@@ -7,16 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Accounts")
-@Setter@Getter@AllArgsConstructor@NoArgsConstructor
-public class Account {
+@Getter@Setter@AllArgsConstructor@NoArgsConstructor
+@Table(name= "roles")
+public class Roles {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(unique = true,nullable = false)
-    private Long AccNo;
-    @Column(unique = true)
-    private String AccName;
-    private String TypeOfAcc;
+    private String name;
 
 }
