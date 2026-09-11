@@ -12,13 +12,16 @@ import lombok.Setter;
 @Table(name ="customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-
+@Column(name = "name")
     private String name ;
+@Column(name = "accno")
 
-    private Long AccNo;
-    private String AccName;
-    private String TypeOfAcc;
+    private Long accno;
+@Column(name = "accname")
+    private String accname;
+@Column(name = "typeofacc")
+    private String typeofacc;
 
 }

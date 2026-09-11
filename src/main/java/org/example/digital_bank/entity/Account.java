@@ -11,12 +11,13 @@ import lombok.Setter;
 @Setter@Getter@AllArgsConstructor@NoArgsConstructor
 public class Account {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true,nullable = false)
-    private Long AccNo;
-    @Column(unique = true)
-    private String AccName;
-    private String TypeOfAcc;
+    @Column(name ="accno",unique = true,nullable = false)
+    private Long accno;
+    @Column(name = "accname", unique = true)
+    private String accname;
+    @Column(name = "typeofacc")
+    private String typeofacc;
 
 }

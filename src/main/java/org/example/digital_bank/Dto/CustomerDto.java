@@ -1,4 +1,4 @@
-package org.example.digital_bank.dto;
+package org.example.digital_bank.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,8 +14,8 @@ public class CustomerDto {
 
     private String name ;
 
-    private Long AccNo;
-    private String AccName;
-    private String TypeOfAcc;
+    private Long accno;
+    private String accname;
+    private String typeofacc;
 
 }

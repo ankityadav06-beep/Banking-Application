@@ -1,4 +1,4 @@
-package org.example.digital_bank.dto;
+package org.example.digital_bank.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
