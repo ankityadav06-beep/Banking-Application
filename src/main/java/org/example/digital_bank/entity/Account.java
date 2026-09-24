@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.digital_bank.repository.CustRepo;
+
+import java.util.List;
 
 @Entity
 @Table(name="Accounts")
@@ -19,5 +22,6 @@ public class Account {
     private String accname;
     @Column(name = "typeofacc")
     private String typeofacc;
+
 
 }
